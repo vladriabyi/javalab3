@@ -1,5 +1,4 @@
 public class Main {
-    
     public static class BuildingBlock {
         private String name;
         private String material;
@@ -15,10 +14,30 @@ public class Main {
             this.stackLimit = stackLimit;
         }
 
-        // Getters and setters (to be added in the next commit)
+        public String getName() { return name; }
+        public void setName(String name) { this.name = name; }
+        public String getMaterial() { return material; }
+        public void setMaterial(String material) { this.material = material; }
+        public int getHardness() { return hardness; }
+        public void setHardness(int hardness) { this.hardness = hardness; }
+        public boolean isTransparent() { return isTransparent; }
+        public void setTransparent(boolean transparent) { isTransparent = transparent; }
+        public int getStackLimit() { return stackLimit; }
+        public void setStackLimit(int stackLimit) { this.stackLimit = stackLimit; }
+
+        @Override
+        public String toString() {
+            return "BuildingBlock{" +
+                   "name='" + name + '\'' +
+                   ", material='" + material + '\'' +
+                   ", hardness=" + hardness +
+                   ", isTransparent=" + isTransparent +
+                   ", stackLimit=" + stackLimit +
+                   '}';
+        }
     }
 
     public static void main(String[] args) {
-        // Main logic will be added in future commits
+        // Main logic 
     }
 }
