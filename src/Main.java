@@ -62,6 +62,19 @@ public class Main {
             System.out.println(block);
         }
 
-        // Searching for a specific block will be added in the next commit
+        // Searching for a specific block
+        BuildingBlock targetBlock = new BuildingBlock("Wood", "Wood", 2, false, 64);
+        boolean found = false;
+        for (BuildingBlock block : blocks) {
+            if (block.getName().equals(targetBlock.getName()) &&
+                block.getMaterial().equals(targetBlock.getMaterial()) &&
+                block.getHardness() == targetBlock.getHardness() &&
+                block.isTransparent() == targetBlock.isTransparent() &&
+                block.getStackLimit() == targetBlock.getStackLimit()) {
+                found = true;
+                break;
+            }
+        }
+        System.out.println("\nBlock found: " + found);
     }
 }
