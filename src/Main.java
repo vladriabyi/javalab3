@@ -56,5 +56,12 @@ public class Main {
         }
 
         // Sorting by name (descending)
+        Arrays.sort(blocks, (b1, b2) -> b2.getName().compareTo(b1.getName()));
+        System.out.println("\nSorted by name (descending):");
+        for (BuildingBlock block : blocks) {
+            System.out.println(block);
+        }
+
+        // Searching for a specific block will be added in the next commit
     }
 }
