@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static class BuildingBlock {
         private String name;
@@ -38,6 +40,14 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        // Main logic 
+        BuildingBlock[] blocks = {
+            new BuildingBlock("Stone", "Rock", 3, false, 64),
+            new BuildingBlock("Glass", "Silica", 1, true, 64),
+            new BuildingBlock("Diamond", "Diamond", 5, false, 64),
+            new BuildingBlock("Wood", "Wood", 2, false, 64),
+            new BuildingBlock("Lapis", "Stone", 4, false, 64)
+        };
+
+        // Sorting 
     }
 }
