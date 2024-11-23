@@ -48,6 +48,13 @@ public class Main {
             new BuildingBlock("Lapis", "Stone", 4, false, 64)
         };
 
-        // Sorting 
+        // Sorting by hardness (ascending)
+        Arrays.sort(blocks, (b1, b2) -> Integer.compare(b1.getHardness(), b2.getHardness()));
+        System.out.println("Sorted by hardness (ascending):");
+        for (BuildingBlock block : blocks) {
+            System.out.println(block);
+        }
+
+        // Sorting by name (descending)
     }
 }
